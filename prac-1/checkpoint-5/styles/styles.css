@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color:#333;
+    color: #fff;
+    padding:10px;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #ff0;
+}
+
+
+a[href*="flinders.edu.au"]{
+    color: #0202ee;
+    text-decoration: none;
+}
+
+
+a[href*="flinders.edu.au"]:hover{
+    text-decoration: underline;
+}
+
+a[href*="flinders.edu.au"]:visited {
+    color: #5656ff;
+}
+
+footer {
+    background-color: #333;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: #fff;
+    text-align:center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}
+
+/* about me section */
+
+main {
+    display: flex;            
+    justify-content: space-between; 
+    align-items: flex-start;  
+    padding-right: 10px; 
+}
+
+
+.bio-text {
+    width: 600px;
+    text-align: justify;
+    
+}
+
+
+.bio-image {
+    width:300px;
+    position: absolute;
+    top:200px;
+    right:10px;
+}
+
+/* for table styling */
+
+table{
+    width: 65%;
+    margin:20px 0 0 0;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding:8px;
+    border:1px solid #ddd;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+}
+
+table a{
+    color: #0404d4;
+    text-decoration: none;
+}
+
+table a: hover {
+    color:#030368;
+    text-decoration: underline;
+
+}
+
+/* for the contact me section */
+
+/* Style the form container */
+form {
+    width: 500px; /* Set a fixed width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Remove bullets and reset padding for the list */
+ul {
+    list-style-type: none; /* Remove bullets (dots) */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; /* Reset the margin */
+}
+
+/* Label styling */
+form label {
+    display: block; /* Make labels block elements to place them above input fields */
+    margin-bottom: 5px; /* Add a small margin below labels */
+    font-weight: normal; /* Remove bold formatting */
+}
+
+/* Remove colon after label text */
+form label::after {
+    content: none; /* Ensure nothing is added after the label text */
+}
+
+/* Style the input fields */
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%; /* Make input fields full width within the form */
+    border: 1px solid #d4dadc; /* Set a solid border color #d4dadc */
+    margin: 3px 0; /* Set margin: 3px top, 3px bottom, none on left and right */
+    padding: 6px; /* Add padding inside the input fields */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Remove the outline and change border color when focused */
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
+    outline: none; /* Remove the default outline */
+    border-color: #263238; /* Change border color when focused */
+}
+
+/* Ensure Phone number input field behaves as a text field (removes arrows in some browsers) */
+input[type="number"] {
+    appearance: none; /* Removes the arrows in WebKit browsers */
+    -moz-appearance: textfield; /* Removes the arrows in Firefox */
+    -webkit-appearance: none; /* Removes the arrows in Safari and Chrome */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    border: none; /* No border */
+    font-weight: bold; /* Bold font */
+    text-transform: uppercase; /* Uppercase font */
+    color: #fff; /* Font color #fff */
+    padding: 10px 25px; /* Padding: 10px top and bottom, 25px left and right */
+    background-color: #c97413; /* Background color #c97413 */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    display: block; /* Make the button a block element */
+    width: auto; /* Auto width, button will size according to its content */
+    margin: 20px 0; /* Margin above and below the button */
+}
+
+/* Change button background color on hover */
+input[type="submit"]:hover {
+    background-color: #c68711; /* Background color when hovered */
+}
+
+/* General styling for the form area */
+form ul li {
+    margin-bottom: 20px; /* Space out each input section */
+}
